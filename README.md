@@ -1,4 +1,4 @@
-# OmniAuth Withings
+# OmniAuth Withings [![Build Status](https://travis-ci.org/flada-auxv/omniauth-withings.svg?branch=master)](https://travis-ci.org/flada-auxv/omniauth-withings)
 
 OmniAuth strategy for authenticating to Withings.
 
