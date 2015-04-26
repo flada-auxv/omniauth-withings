@@ -11,7 +11,7 @@ end
 
 get '/' do
   <<-HTML
-    <a href='/auth/withings'>Sing in with Withings</a>
+    <a href='/auth/withings'>Sign in with Withings</a>
   HTML
 end
 
