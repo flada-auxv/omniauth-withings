@@ -19,12 +19,9 @@ module OmniAuth
         user = raw_info['body']['users'][0]
 
         {
-          id:        user['id'],
-          firstname: user['firstname'],
-          lastname:  user['lastname'],
-          shortname: user['shortname'],
-          gender:    user['gender'] == 0 ? :male : :female,
-          birthdate: user['birthdate'] ? Time.at(user['birthdate']) : nil
+          name:       "#{user['firstname']} #{user['lastname']}",
+          first_name: user['firstname'],
+          last_name:  user['lastname'],
         }
       end
 

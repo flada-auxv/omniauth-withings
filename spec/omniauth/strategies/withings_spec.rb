@@ -38,12 +38,9 @@ describe OmniAuth::Strategies::Withings do
 
     subject { omniauth_withings.info }
 
-    its([:id])        { should eq(1) }
-    its([:firstname]) { should eq('flada') }
-    its([:lastname])  { should eq('auxv') }
-    its([:shortname]) { should eq('FLA') }
-    its([:gender])    { should eq(:male) }
-    its([:birthdate]) { should eq(Time.at(589993200)) }
+    its([:name])       { should eq('flada auxv') }
+    its([:first_name]) { should eq('flada') }
+    its([:last_name])  { should eq('auxv') }
   end
 
   describe 'skip_info option' do
