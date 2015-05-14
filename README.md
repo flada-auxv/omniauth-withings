@@ -2,7 +2,7 @@
 
 OmniAuth strategy for authenticating to Withings.
 
-This gem isn't hosted in [RubyGems.org](https://rubygems.org), because same named gem already exists there(but it looks like WIP…?)
+This gem isn't hosted in [RubyGems.org](https://rubygems.org), because same named gem already exists there.
 
 ## Installation
 
