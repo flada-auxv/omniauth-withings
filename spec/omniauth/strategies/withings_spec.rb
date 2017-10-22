@@ -10,7 +10,7 @@ describe OmniAuth::Strategies::Withings do
     subject { omniauth_withings.options }
 
     it { expect(subject.name).to eq('withings') }
-    it { expect(subject.client_options.site).to eq('https://oauth.withings.com') }
+    it { expect(subject.client_options.site).to eq('https://developer.health.nokia.com') }
     it { expect(subject.client_options.request_token_path).to eq('/account/request_token') }
     it { expect(subject.client_options.access_token_path).to eq('/account/access_token') }
     it { expect(subject.client_options.authorize_path).to eq('/account/authorize') }
