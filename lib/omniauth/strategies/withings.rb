@@ -7,7 +7,7 @@ module OmniAuth
       option :name, 'withings'
 
       option :client_options, {
-        site:               'https://oauth.withings.com',
+        site:               'https://developer.health.nokia.com',
         request_token_path: '/account/request_token',
         access_token_path:  '/account/access_token',
         authorize_path:     '/account/authorize'
@@ -31,7 +31,7 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= JSON.load(
-          consumer.request(:get, "http://wbsapi.withings.net/user?action=getbyuserid&userid=#{uid}", access_token, {scheme: :query_string}).body
+          consumer.request(:get, "https://api.health.nokia.com/user?action=getbyuserid&userid=#{uid}", access_token, {scheme: :query_string}).body
         )
       rescue ::Errno::ETIMEDOUT
         raise ::Timeout::Error
